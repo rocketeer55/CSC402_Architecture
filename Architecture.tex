@@ -107,6 +107,15 @@ This project is meant as an interface between a database and the data being inpu
 \paragraph{} Since users may select more files to upload while some files are already in the process of uploading, a fork is used in this diagram. This means that while files are uploading, a user may select more files to upload, then begin uploading those files. Selecting "continue" will not continue to the next page unless all files have completely uploaded or have been canceled.
 \paragraph{} The processing files state may fail for numerous reasons, such as an incompatible file type, or a corrupt file. When this occurs, that file is deleted from the system, and users may select another file to upload, or cancel.
 
+\subsubsection{Uploading Files}
+\includegraphics[scale = 0.52]{YarmSequenceDiagram.png}
+\begingroup
+\captionof{figure}{Sequence Diagram of Data}
+\endgroup
+
+\paragraph{}Figure 3 models the sequence of the data through the system, and the interaction between the user and the project. Users will begin their interaction with the UI by uploading files to the front-end. Then it will be processed into a temporary holding database for processing, fed to the machine learning algorithm, then the resulting data will be displayed by the UI.
+\paragraph{} Since this process can happen multiple times, there must be a cleanup for purging the temporary database so that unwanted/sensitive data is not stored permanently in an potentially unsecured/unknown entry.
+\paragraph{} This process will then repeat per data entry uploaded by the user and can be repeated as many times as the user desires.
 
 
 \section{Test}

@@ -1,13 +1,29 @@
 \contentsline {section}{Revision History}{2}
 \contentsline {section}{Credits}{2}
-\contentsline {section}{\numberline {1}Introduction}{3}
-\contentsline {section}{\numberline {2}Problem Description}{3}
-\contentsline {section}{\numberline {3}Solution}{3}
-\contentsline {subsection}{\numberline {3.1}Overview}{3}
-\contentsline {subsection}{\numberline {3.2}Components}{3}
-\contentsline {subsection}{\numberline {3.3}Design}{4}
-\contentsline {subsubsection}{\numberline {3.3.1}Classification Structure}{4}
-\contentsline {section}{\numberline {4}Test}{4}
-\contentsline {section}{\numberline {5}Issues}{4}
-\contentsline {section}{\numberline {A}Glossary}{4}
-\contentsline {section}{\numberline {B}Issues List}{4}
+\contentsline {section}{\numberline {1}Introduction}{4}
+\contentsline {section}{\numberline {2}Problem Description}{4}
+\contentsline {section}{\numberline {3}Solution}{4}
+\contentsline {subsection}{\numberline {3.1}Overview}{4}
+\contentsline {subsection}{\numberline {3.2}Components}{4}
+\contentsline {subsection}{\numberline {3.3}Design}{5}
+\contentsline {subsubsection}{\numberline {3.3.1}Classification Structure}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {subsubsection}{\numberline {3.3.2}Uploading Files}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {subsubsection}{\numberline {3.3.3}Uploading Files}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {section}{\numberline {4}Test}{8}
+\contentsline {subsection}{\numberline {4.1}Login}{8}
+\contentsline {subsection}{\numberline {4.2}Data Upload}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {section}{\numberline {5}Issues}{8}
+\contentsline {section}{\numberline {A}Glossary}{8}
+\contentsline {section}{\numberline {B}Issues List}{8}
