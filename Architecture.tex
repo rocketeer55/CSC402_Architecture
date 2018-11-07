@@ -1,5 +1,7 @@
 \documentclass[12pt,oneside,letterpaper]{article}
 
+\usepackage{graphicx}
+\usepackage{svg}
 \pagestyle{headings}
 \oddsidemargin 0.25in \textwidth     6.25in \topmargin     0.4in
 \textheight    8.5in
@@ -33,7 +35,7 @@ Version 1.0}
 \hline
 \textbf{Name}&\textbf{Date}&\textbf{Role}&\textbf{Version}\\
 \hline
-John Smith&October 10, 2009&Document Owner&1.0\\
+Spencer Schurk&November 7, 2018&Lead Author of Introduction&1.0\\
 \hline
 Sally Jones&October 10, 2009&Lead Author of Business Requirements&1.0\\
 \hline
@@ -48,7 +50,7 @@ Sally Jones&October 10, 2009&Lead Author of Business Requirements&1.0\\
 \hline
 \textbf{Name}&\textbf{Date}&\textbf{Reason for Changes}&\textbf{Version}\\
 \hline
-John Smith&October 10, 2008&Initial baseline approved by Customer&1.0\\
+Spencer Schurk&November 7, 2018&Completed Introduction&1.0\\
 \hline
 &&&\\
 \hline
@@ -80,6 +82,13 @@ Any quality attribute requirements or constraints should also be explained in th
 
 \subsection{Design}
 [This is where the meat of the design lives.  For each component, there should be a subsection describing the design of that component in as much detail as you want to provide in a high-level design.  There should also be a subsection that describes how the components work together. This section should include class, sequence, and collaboration diagrams as appropriate.]
+
+\subsubsection{Classification Structure}
+\begin{figure}[htbp]
+  \centering
+  \includesvg{Classification - Object Diagram}
+  \caption{svg image}
+\end{figure}
 
 \section{Test}
 [This section should describe how the solution will be tested, especially if the test scenario or test infrastructure are complex.]
