@@ -110,7 +110,14 @@ This project is meant as an interface between a database and the data being inpu
 
 
 \section{Test}
-[This section should describe how the solution will be tested, especially if the test scenario or test infrastructure are complex.]
+Since our solution includes multiple components written in different languages, testing should almost exclusively be written separately for each individual component, with system-wide acceptance testing completed at the end. Described below are testing methods for each component.
+
+\subsection{Login}
+
+\subsection{Data Upload}
+\paragraph{} Testing should be performed with all supported data types. Testing should also be performed with unsupported data types to ensure errors are being caught gracefully. Corrupted or improperly-formatted files should be tested as well, since these will also produce errors. This component should also be tested with bulk-uploading, as users may want to upload a large amount of data files at a time.
+\paragraph{} Once files have successfully been uploaded, their processed output should be tested for consistency with the source file. Ensure that no values are missing, and the data follows the same structure as the source file.
+\paragraph{} Additionally, all other functionality of the Upload Files screen should be functionally tested. Ensure that all buttons work in all states, and users do not get trapped in any states due to unhandled exceptions.
 
 \section{Issues}
 [Any issues or open questions should be described here.]
