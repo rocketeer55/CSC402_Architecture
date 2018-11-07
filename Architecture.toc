@@ -14,16 +14,19 @@
 \contentsline {paragraph}{}{6}
 \contentsline {paragraph}{}{6}
 \contentsline {paragraph}{}{6}
-\contentsline {subsubsection}{\numberline {3.3.3}Uploading Files}{7}
+\contentsline {subsubsection}{\numberline {3.3.3}Overview of Classes}{7}
 \contentsline {paragraph}{}{7}
 \contentsline {paragraph}{}{7}
 \contentsline {paragraph}{}{7}
+\contentsline {subsubsection}{\numberline {3.3.4}Flow of Data}{8}
+\contentsline {paragraph}{}{8}
+\contentsline {paragraph}{}{8}
 \contentsline {section}{\numberline {4}Test}{8}
-\contentsline {subsection}{\numberline {4.1}Login}{8}
-\contentsline {subsection}{\numberline {4.2}Data Upload}{8}
-\contentsline {paragraph}{}{8}
-\contentsline {paragraph}{}{8}
-\contentsline {paragraph}{}{8}
-\contentsline {section}{\numberline {5}Issues}{8}
-\contentsline {section}{\numberline {A}Glossary}{8}
-\contentsline {section}{\numberline {B}Issues List}{8}
+\contentsline {subsection}{\numberline {4.1}Login}{9}
+\contentsline {subsection}{\numberline {4.2}Data Upload}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {section}{\numberline {5}Issues}{9}
+\contentsline {section}{\numberline {A}Glossary}{9}
+\contentsline {section}{\numberline {B}Issues List}{9}

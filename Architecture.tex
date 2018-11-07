@@ -103,20 +103,29 @@ This project is meant as an interface between a database and the data being inpu
 \captionof{figure}{Upload Files State Diagram - Spencer Schurk}
 \endgroup
 
+
+\paragraph{}Figure 3 models the sequence of the data through the system, and the interaction between the user and the system. Users will begin their interaction with the UI by uploading files to the front-end. Then it will be processed into a temporary holding database for processing, fed to the machine learning algorithm, then the resulting data will be displayed by the UI.
+\paragraph{} Since this process can happen multiple times, there must be a cleanup for purging the temporary database so that unwanted/sensitive data is not stored permanently in an potentially unsecured/unknown entry.
+\paragraph{} This process will then repeat per data entry uploaded by the user and can be repeated as many times as the user desires.
+
+\subsubsection{Overview of Classes}
+\includegraphics[scale = 0.3]{YarmClassDiagram.png}
+\begingroup
+\captionof{figure}{Overview of Classes - Matt Yarmolich}
+\endgroup
+
 \paragraph{} Figure 2 depicts a state diagram modeling the user flow when uploading files to be classified. Users will enter this page from the main menu, and leaving this page will take users to the start of the classification process. When leaving this state, all files that were in the process of being uploaded must be completed or canceled.
 \paragraph{} Since users may select more files to upload while some files are already in the process of uploading, a fork is used in this diagram. This means that while files are uploading, a user may select more files to upload, then begin uploading those files. Selecting "continue" will not continue to the next page unless all files have completely uploaded or have been canceled.
 \paragraph{} The processing files state may fail for numerous reasons, such as an incompatible file type, or a corrupt file. When this occurs, that file is deleted from the system, and users may select another file to upload, or cancel.
 
-\subsubsection{Uploading Files}
+\subsubsection{Flow of Data}
 \includegraphics[scale = 0.52]{YarmSequenceDiagram.png}
 \begingroup
-\captionof{figure}{Sequence Diagram of Data}
+\captionof{figure}{Sequence Diagram of Data - Matt Yarmolich}
 \endgroup
 
-\paragraph{}Figure 3 models the sequence of the data through the system, and the interaction between the user and the project. Users will begin their interaction with the UI by uploading files to the front-end. Then it will be processed into a temporary holding database for processing, fed to the machine learning algorithm, then the resulting data will be displayed by the UI.
-\paragraph{} Since this process can happen multiple times, there must be a cleanup for purging the temporary database so that unwanted/sensitive data is not stored permanently in an potentially unsecured/unknown entry.
-\paragraph{} This process will then repeat per data entry uploaded by the user and can be repeated as many times as the user desires.
-
+\paragraph{}Figure 4 gives an overview of the classes that will make up the designed system. The main parts of this diagram pertain to the front end, back end, and the machine learning aspect of the project. This diagram will be used to model our architecture of our project and to determine how all the pieces of the system fit together. 
+ \paragraph{} All of these components will be designed to be reusable so that they can be strung together and be reused depending on the users use-case. Unfortunately, the languages we have picked do not lend themselves particularly well for object oriented programming (python is a scripted language and react is based on javascript) so we ultimately decided to split these into files.
 
 \section{Test}
 Since our solution includes multiple components written in different languages, testing should almost exclusively be written separately for each individual component, with system-wide acceptance testing completed at the end. Described below are testing methods for each component.
