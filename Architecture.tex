@@ -41,6 +41,8 @@ Spencer Schurk&November 7, 2018&Lead Author of Introduction, Upload Data Testing
 \hline
 Geraldo Macias&November 7, 2018&Lead Author of Overview and Co-Author of Component&1.0\\
 \hline
+Jake Veazey&November 7, 2018&Lead Author of Login/Signup and Co-Author of Component, Some Testing Documentation&1.0\\
+\hline
 &&&\\
 \hline
 \end{tabular}
@@ -52,7 +54,7 @@ Geraldo Macias&November 7, 2018&Lead Author of Overview and Co-Author of Compone
 \hline
 Spencer Schurk&November 7, 2018&Completed Introduction, Upload Data Testing, and two diagrams&1.0\\
 \hline
-&&&\\
+Jake Veazey&November 7, 2018&Updated the project problem&1.0\\
 \hline
 &&&\\
 \hline
@@ -67,9 +69,7 @@ Spencer Schurk&November 7, 2018&Completed Introduction, Upload Data Testing, and
 The purpose of this document is to describe the architecture of our Data Classifier. This document will be used as a reference when development begins. This document may change over time as we learn more about specific technologies being used for this project. For more information regarding this project, please see the Vision and Scope document, as well as the SRS document.
 
 \section{Problem Description}
-[Tell the audience what problem is being solved, or requirements are being met, by this design.  Include requirements or constraints that drive the direction of the design.
-
-Any quality attribute requirements or constraints should also be explained in this section.]
+One of the biggest unsolved roadblocks for data scientists is data sanitization and grooming. Data scientists spend excessive amounts of time preparing data before even being able to do productive work. Eliminating this downtime would allow more room for data scientists to do the meaningful work that they actually want to do. Our application aims to do just this. Through the use of machine learning techniques and a robust web interface, our application will take various ungroomed data sets as input and will convert them into cohesive, organized documents as output. We want to make the process of pre-analysis data grooming as automated and painless as possible. 
 
 
 
@@ -200,7 +200,9 @@ The Classifier Component will receive files from the Data Management component a
 \section{Test}
 Since our solution includes multiple components written in different languages, testing should almost exclusively be written separately for each individual component, with system-wide acceptance testing completed at the end. Described below are testing methods for each component.
 
-\subsection{Login}
+\subsection{Login \& Signup}
+In order to test the UI for the login, an automated testing tool can be used, but manual testing will be just as effective and easier to implement as no additional code will be required for testing. The back end will be tested by providing the login API correct and incorrect information to be queried from the database. The results of an approved and logged in acoount or an error will tell us whether testing was successful.
+Signing up for an account will be similar. The tester will provide a login and a password that will be passed to an API. The API will notify the admin of a request. Testing will be looking for the correct information passed in.
 
 \subsection{Data Upload}
 \paragraph{} Testing should be performed with all supported data types. Testing should also be performed with unsupported data types to ensure errors are being caught gracefully. Corrupted or improperly-formatted files should be tested as well, since these will also produce errors. This component should also be tested with bulk-uploading, as users may want to upload a large amount of data files at a time.
