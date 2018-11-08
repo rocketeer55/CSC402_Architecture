@@ -86,9 +86,7 @@ The Account Management component will allow a System Administrator to create Use
 
 The Data Management component will allow a user to explore and select files that was been uploaded and/or processed and execute processes on them. The user will be able to send the file(s) through the Classifier Component and return a classified file(s). A user can then export any files, including files that have been classified or not classified.
 
-The Classifier Component will do yadayadayda
-[This section should list and briefly describe the components of the design.  The word ``components'' can refer to deployable units or to areas of the design, as appropriate. This section should start with the deployment diagram.]
-
+The Classifier Component will receive files from the Data Management component and classify the data according to content and column name. If a dataset without column names is provided, the Classifier will attempt to classify the columns. If under a 80\% confidence level, the classifier will ask the user to supply a proper name for the column.
 \subsubsection{Component Diagram}
 \includegraphics[scale = 0.7]{Component_Diagram.png}
 \begingroup
