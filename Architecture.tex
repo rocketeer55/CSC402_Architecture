@@ -41,7 +41,7 @@ Spencer Schurk&November 7, 2018&Lead Author of Introduction&1.0\\
 \hline
 Sally Jones&October 10, 2009&Lead Author of Business Requirements&1.0\\
 \hline
-Geraldo Macias&November 7, 2018&Lead Author of Use Case Diagram and Co-Author of Component&1.0\\
+Geraldo Macias&November 7, 2018&Lead Author of Overview and Co-Author of Component&1.0\\
 \hline
 &&&\\
 \hline
@@ -79,12 +79,27 @@ Any quality attribute requirements or constraints should also be explained in th
 This project is meant as an interface between a database and the data being inputted to it by the user. The main goal of this project is to provide analytics for the user in order to better identify what type of data is being inputted. With this project, the user will be able to tell the categories of data being inputted, and how they potentially relate to each other. The classifier will allow the user to modify these relations and to interact with a visual model based on these interactions. As defined by the customer, the user will interact with a web based GUI, most likely based on React. This GUI will interface with the Python backend, which is another design restraint, and utilize Scikit, a python library, as our chosen machine classifier. This classifier will act as the main interface/buffer between the user and actually logging the data to the database. 
 
 \subsection{Overview}
-[This section should be a summary of the solution in a few paragraphs, preferably less than a page.]
-\includegraphics[scale = 0.5]{UseCaseDiagram_Geraldo.png}
-
+The system will allow a user to:
+\begin{enumerate}
+    \item Select proper classification category
+    \item Upload datasets from a Data Silo
+    \item Log in and log out
+    \item View the classifier logs
+    \item Export data logs
+\end{enumerate}
+The System will allow the System Administrator to: 
+\begin{enumerate}
+    \item Create user account
+    \item Delete user account
+\end{enumerate}
+\subsubsection{Use Case Diagram}
+\includegraphics[scale = 0.6]{UseCaseDiagram_Geraldo.png}
+\begingroup
+\captionof{figure}{Use Case Diagram - Geraldo Macias}
+\endgroup
 
 \subsection{Components}
-The Account Management component will allow a System Administrator to create User accounts which allow the Users to log in and log out.
+The Account Management component will allow a System Administrator to create User accounts. A user cannot crate accounts by themselves and System Administrator cannot view the data. The user account will store basic information and allow the user to log in and log out.
 
 The Data Management component will allow a user to explore and select files that was been uploaded and/or processed and execute processes on them. The user will be able to send the file(s) through the Classifier Component and return a classified file(s). A user can then export any files, including files that have been classified or not classified.
 
