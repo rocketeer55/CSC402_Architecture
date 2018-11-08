@@ -154,6 +154,8 @@ The Classifier Component will receive files from the Data Management component a
 
 \paragraph{}Figure 7 Gives an overview of the main flow of our system. The diagram is grouped into 3 sections, each showing each the critical states at each phase of the system. Our other diagrams go into further detail of how each phases will behave (i.e. See Figure 3 for a more detailed breakdown of file upload)
 
+\paragraph{}Our machine learning model is still mostly a "black box" at the moment. We do not have an architecture for how we will process our input data. For now, this component exists as "classify data" in the center section of the diagram.
+
  \subsubsection{Edit Data Classifications}
 \includegraphics[scale = 0.70]{bread_state_diagram.png}
 \begingroup
@@ -169,6 +171,16 @@ The Classifier Component will receive files from the Data Management component a
 \endgroup
 
 \paragraph{}Figure 9 shows the projected architecture for deploying the Data Classifier Software. The design is expected to make use of a web server and a database for the back-end. The user interface will be web based, and the Data Classifier Software will make use of a machine learning component.
+
+\subsubsection{Visualization and Export}
+\includegraphics[scale = 0.40]{LandonExportActivityDiagram.png}
+\begingroup
+\captionof{figure}{Activity Diagram for Data Visualization and Export - Landon Gerrits}
+\endgroup
+
+\paragraph{}Figure 10 shows the interaction between the user and the system when choosing to view and export data that has been classified (or data that could not be classified). The user can choose to review the data classifications. At this time, we do not know how we will present this data to the user. One proposed solution was to use Google's Firebase platform to parse our classified JSON file. After viewing the data, the user can select a file type for export.
+
+\paragraph{}In the case where the system cannot classify a subset of the data, the user has the option to omit this data from the export, meaning that there will be some amount of data found in the input data set that will NOT be in the exported (classified) data set. If the user chooses to NOT omit this unclassified data, then then the system will return to the original data import screen.
 
 \section{Test}
 Since our solution includes multiple components written in different languages, testing should almost exclusively be written separately for each individual component, with system-wide acceptance testing completed at the end. Described below are testing methods for each component.
