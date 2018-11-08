@@ -136,6 +136,14 @@ The Classifier Component will receive files from the Data Management component a
 
 \paragraph{}Figure 4 gives an overview of the classes that will make up the designed system. The main parts of this diagram pertain to the front end, back end, and the machine learning aspect of the project. This diagram will be used to model our architecture of our project and to determine how all the pieces of the system fit together. 
  \paragraph{} All of these components will be designed to be reusable so that they can be strung together and be reused depending on the users use-case. Unfortunately, the languages we have picked do not lend themselves particularly well for object oriented programming (python is a scripted language and react is based on javascript) so we ultimately decided to split these into files.
+ 
+ \subsubsection{Flow of Data}
+\includegraphics[scale = 0.40]{LandonStateDiagram.png}
+\begingroup
+\captionof{figure}{State Diagram of System Overview - Landon Gerrits}
+\endgroup
+
+\paragraph{}Figure 6 Gives an overview of the main flow of our system. The diagram is grouped into 3 sections, each showing each the critical states at each phase of the system. Our other diagrams go into further detail of how each phases will behave (i.e. See Figure 3 for a more detailed breakdown of file upload)
 
 \section{Test}
 Since our solution includes multiple components written in different languages, testing should almost exclusively be written separately for each individual component, with system-wide acceptance testing completed at the end. Described below are testing methods for each component.
