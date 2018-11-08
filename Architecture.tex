@@ -97,13 +97,22 @@ The Classifier Component will receive files from the Data Management component a
 \subsection{Design}
 [This is where the meat of the design lives.  For each component, there should be a subsection describing the design of that component in as much detail as you want to provide in a high-level design.  There should also be a subsection that describes how the components work together. This section should include class, sequence, and collaboration diagrams as appropriate.]
 
+
+\subsubsection{Login /& Create an Account State Diagram}
+\includegraphics[scale = 0.7]{Veazey_Login_State.png}
+\begingroup
+\captionof{figure}{Login and Create Account State Diagram - Jake Veazey}
+\endgroup
+
+\paragraph{} Figure 2 shows the state diagrams of the user's first interaction with the service -- to login to the system or ask the system admins to create an account. The user enters the service and enters their information (username and password) or asks for a new account. If the user already has an account, they 
+
 \subsubsection{Classification Structure}
 \includegraphics[scale = 0.9]{spencer_object.png}
 \begingroup
 \captionof{figure}{Data Classification Object Diagram - Spencer Schurk}
 \endgroup
 
-\paragraph{} Figure 1 depicts the architecture of our Classification object. Once data classification has completed on the provided files, the finalized result will be structured like this. A classification consists of one Classification object, which contains a String called name, and one to many Categories. 
+\paragraph{} Figure 2 depicts the architecture of our Classification object. Once data classification has completed on the provided files, the finalized result will be structured like this. A classification consists of one Classification object, which contains a String called name, and one to many Categories. 
 \paragraph{} Categories are what the classified data is sorted into by the machine learning algorithms. A category consists of a String called name, and one to many values.
 \paragraph{} Values are the object representation of one value in a data set. The Value object contains the value, and a reference to the table in which it came from. More attributes may be stored in the Value object as necessary.
 
@@ -124,7 +133,7 @@ The Classifier Component will receive files from the Data Management component a
 \captionof{figure}{Overview of Classes - Matt Yarmolich}
 \endgroup
 
-\paragraph{} Figure 2 depicts a state diagram modeling the user flow when uploading files to be classified. Users will enter this page from the main menu, and leaving this page will take users to the start of the classification process. When leaving this state, all files that were in the process of being uploaded must be completed or canceled.
+\paragraph{} Figure 4 depicts a state diagram modeling the user flow when uploading files to be classified. Users will enter this page from the main menu, and leaving this page will take users to the start of the classification process. When leaving this state, all files that were in the process of being uploaded must be completed or canceled.
 \paragraph{} Since users may select more files to upload while some files are already in the process of uploading, a fork is used in this diagram. This means that while files are uploading, a user may select more files to upload, then begin uploading those files. Selecting "continue" will not continue to the next page unless all files have completely uploaded or have been canceled.
 \paragraph{} The processing files state may fail for numerous reasons, such as an incompatible file type, or a corrupt file. When this occurs, that file is deleted from the system, and users may select another file to upload, or cancel.
 
@@ -134,7 +143,7 @@ The Classifier Component will receive files from the Data Management component a
 \captionof{figure}{Sequence Diagram of Data - Matt Yarmolich}
 \endgroup
 
-\paragraph{}Figure 4 gives an overview of the classes that will make up the designed system. The main parts of this diagram pertain to the front end, back end, and the machine learning aspect of the project. This diagram will be used to model our architecture of our project and to determine how all the pieces of the system fit together. 
+\paragraph{}Figure 5 gives an overview of the classes that will make up the designed system. The main parts of this diagram pertain to the front end, back end, and the machine learning aspect of the project. This diagram will be used to model our architecture of our project and to determine how all the pieces of the system fit together. 
  \paragraph{} All of these components will be designed to be reusable so that they can be strung together and be reused depending on the users use-case. Unfortunately, the languages we have picked do not lend themselves particularly well for object oriented programming (python is a scripted language and react is based on javascript) so we ultimately decided to split these into files.
  
  \subsubsection{Flow of Data}
