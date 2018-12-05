@@ -4,29 +4,43 @@
 \contentsline {section}{\numberline {2}Problem Description}{4}
 \contentsline {section}{\numberline {3}Solution}{4}
 \contentsline {subsection}{\numberline {3.1}Overview}{4}
-\contentsline {subsection}{\numberline {3.2}Components}{4}
-\contentsline {subsection}{\numberline {3.3}Design}{5}
-\contentsline {subsubsection}{\numberline {3.3.1}Classification Structure}{5}
-\contentsline {paragraph}{}{5}
-\contentsline {paragraph}{}{6}
-\contentsline {paragraph}{}{6}
-\contentsline {subsubsection}{\numberline {3.3.2}Uploading Files}{6}
-\contentsline {paragraph}{}{6}
-\contentsline {paragraph}{}{6}
-\contentsline {paragraph}{}{6}
-\contentsline {subsubsection}{\numberline {3.3.3}Overview of Classes}{7}
+\contentsline {subsubsection}{\numberline {3.1.1}Use Case Diagram}{5}
+\contentsline {subsection}{\numberline {3.2}Components}{5}
+\contentsline {subsubsection}{\numberline {3.2.1}Component Diagram}{6}
+\contentsline {subsection}{\numberline {3.3}Design}{6}
+\contentsline {subsubsection}{\numberline {3.3.1}Login \& Create an Account State Diagram}{7}
 \contentsline {paragraph}{}{7}
-\contentsline {paragraph}{}{7}
-\contentsline {paragraph}{}{7}
-\contentsline {subsubsection}{\numberline {3.3.4}Flow of Data}{8}
+\contentsline {subsubsection}{\numberline {3.3.2}Classification Structure}{8}
 \contentsline {paragraph}{}{8}
 \contentsline {paragraph}{}{8}
-\contentsline {section}{\numberline {4}Test}{8}
-\contentsline {subsection}{\numberline {4.1}Login}{9}
-\contentsline {subsection}{\numberline {4.2}Data Upload}{9}
+\contentsline {paragraph}{}{8}
+\contentsline {subsubsection}{\numberline {3.3.3}Uploading Files}{9}
 \contentsline {paragraph}{}{9}
 \contentsline {paragraph}{}{9}
 \contentsline {paragraph}{}{9}
-\contentsline {section}{\numberline {5}Issues}{9}
-\contentsline {section}{\numberline {A}Glossary}{9}
-\contentsline {section}{\numberline {B}Issues List}{9}
+\contentsline {subsubsection}{\numberline {3.3.4}Overview of Classes}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {paragraph}{}{10}
+\contentsline {subsubsection}{\numberline {3.3.5}Flow of Data}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {subsubsection}{\numberline {3.3.6}Flow of Data}{12}
+\contentsline {paragraph}{}{12}
+\contentsline {paragraph}{}{12}
+\contentsline {subsubsection}{\numberline {3.3.7}Edit Data Classifications}{13}
+\contentsline {paragraph}{}{13}
+\contentsline {subsubsection}{\numberline {3.3.8}Deployment Diagram}{14}
+\contentsline {paragraph}{}{14}
+\contentsline {subsubsection}{\numberline {3.3.9}Visualization and Export}{15}
+\contentsline {paragraph}{}{15}
+\contentsline {paragraph}{}{15}
+\contentsline {section}{\numberline {4}Test}{16}
+\contentsline {subsection}{\numberline {4.1}Login \& Signup}{16}
+\contentsline {subsection}{\numberline {4.2}Data Upload}{16}
+\contentsline {paragraph}{}{16}
+\contentsline {paragraph}{}{16}
+\contentsline {paragraph}{}{16}
+\contentsline {section}{\numberline {5}Issues}{16}
+\contentsline {section}{\numberline {A}Glossary}{17}
+\contentsline {section}{\numberline {B}Issues List}{17}

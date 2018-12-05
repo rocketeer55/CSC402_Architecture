@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  7 NOV 2018 15:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  5 DEC 2018 15:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -171,58 +171,128 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
 \openout3 = `Architecture.toc'.
 
- [2] [3] [4]
-<spencer_object.png, id=19, 493.845pt x 402.50375pt>
-File: spencer_object.png Graphic file (type png)
- <use spencer_object.png>
-Package pdftex.def Info: spencer_object.png used on input line 91.
-(pdftex.def)             Requested size: 444.45638pt x 362.25002pt.
 
-[5 <./spencer_object.png>]
-<spencer_state.png, id=27, 905.3825pt x 424.58624pt>
-File: spencer_state.png Graphic file (type png)
- <use spencer_state.png>
-Package pdftex.def Info: spencer_state.png used on input line 101.
-(pdftex.def)             Requested size: 470.80162pt x 220.78612pt.
+Underfull \hbox (badness 1112) in paragraph at lines 44--44
+\OT1/cmr/m/n/12 Co-Author of Com-po-nent, Some
+ []
 
-Overfull \hbox (19.11412pt too wide) in paragraph at lines 101--103
+[2]
+Underfull \hbox (badness 2512) in paragraph at lines 55--55
+[]\OT1/cmr/m/n/12 Completed In-tro-duc-tion, Up-load
+ []
+
+[3] [4] <UseCaseDiagram_Geraldo.png, id=19, 631.35875pt x 684.5575pt>
+File: UseCaseDiagram_Geraldo.png Graphic file (type png)
+
+<use UseCaseDiagram_Geraldo.png>
+Package pdftex.def Info: UseCaseDiagram_Geraldo.png used on input line 94.
+(pdftex.def)             Requested size: 378.81818pt x 410.73766pt.
+ [5 <./UseCaseDiagram_Geraldo.png>]
+<Component_Diagram.png, id=27, 673.51625pt x 452.69125pt>
+File: Component_Diagram.png Graphic file (type png)
+
+<use Component_Diagram.png>
+Package pdftex.def Info: Component_Diagram.png used on input line 106.
+(pdftex.def)             Requested size: 471.45816pt x 316.88171pt.
+
+Overfull \hbox (19.77066pt too wide) in paragraph at lines 106--108
 [] 
  []
 
-<YarmClassDiagram.png, id=28, 1466.47874pt x 616.3025pt>
+[6 <./Component_Diagram.png>]
+<Veazey_Login_State.png, id=32, 492.84125pt x 462.72874pt>
+File: Veazey_Login_State.png Graphic file (type png)
+
+<use Veazey_Login_State.png>
+Package pdftex.def Info: Veazey_Login_State.png used on input line 118.
+(pdftex.def)             Requested size: 344.98651pt x 323.90791pt.
+
+<spencer_object.png, id=33, 493.845pt x 402.50375pt>
+File: spencer_object.png Graphic file (type png)
+ <use spencer_object.png>
+Package pdftex.def Info: spencer_object.png used on input line 126.
+(pdftex.def)             Requested size: 444.45638pt x 362.25002pt.
+
+[7 <./Veazey_Login_State.png>]
+<spencer_state.png, id=39, 905.3825pt x 424.58624pt>
+File: spencer_state.png Graphic file (type png)
+ <use spencer_state.png>
+Package pdftex.def Info: spencer_state.png used on input line 136.
+(pdftex.def)             Requested size: 470.80162pt x 220.78612pt.
+
+Overfull \hbox (19.11412pt too wide) in paragraph at lines 136--138
+[] 
+ []
+
+[8 <./spencer_object.png>]
+<YarmClassDiagram.png, id=44, 1777.64125pt x 845.1575pt>
 File: YarmClassDiagram.png Graphic file (type png)
 
 <use YarmClassDiagram.png>
-Package pdftex.def Info: YarmClassDiagram.png used on input line 112.
-(pdftex.def)             Requested size: 439.94702pt x 184.89217pt.
- [6 <./spencer_state.png>]
-<YarmSequenceDiagram.png, id=33, 678.535pt x 633.36626pt>
+Package pdftex.def Info: YarmClassDiagram.png used on input line 147.
+(pdftex.def)             Requested size: 533.2965pt x 253.54921pt.
+
+Overfull \hbox (81.609pt too wide) in paragraph at lines 147--149
+[] 
+ []
+
+[9 <./spencer_state.png>]
+<YarmSequenceDiagram.png, id=49, 678.535pt x 633.36626pt>
 File: YarmSequenceDiagram.png Graphic file (type png)
 
 <use YarmSequenceDiagram.png>
-Package pdftex.def Info: YarmSequenceDiagram.png used on input line 122.
+Package pdftex.def Info: YarmSequenceDiagram.png used on input line 157.
 (pdftex.def)             Requested size: 352.84023pt x 329.35236pt.
- [7 <./YarmClassDiagram.png>] [8 <./YarmSequenceDiagram.png>] [9] (./Architectu
-re.aux) ) 
+ [10 <./YarmClassDiagram.png>]
+<LandonStateDiagram.png, id=54, 1098.1025pt x 746.79pt>
+File: LandonStateDiagram.png Graphic file (type png)
+
+<use LandonStateDiagram.png>
+Package pdftex.def Info: LandonStateDiagram.png used on input line 166.
+(pdftex.def)             Requested size: 439.23322pt x 298.7107pt.
+ [11 <./YarmSequenceDiagram.png>]
+<bread_state_diagram.png, id=59, 603.25375pt x 272.01625pt>
+File: bread_state_diagram.png Graphic file (type png)
+
+<use bread_state_diagram.png>
+Package pdftex.def Info: bread_state_diagram.png used on input line 176.
+(pdftex.def)             Requested size: 422.27475pt x 190.41006pt.
+ [12 <./LandonStateDiagram.png>]
+<bread_deployment_diagram.png, id=64, 723.70375pt x 723.70375pt>
+File: bread_deployment_diagram.png Graphic file (type png)
+
+<use bread_deployment_diagram.png>
+Package pdftex.def Info: bread_deployment_diagram.png used on input line 184.
+(pdftex.def)             Requested size: 434.2256pt x 434.2256pt.
+ [13 <./bread_state_diagram.png>]
+<LandonExportActivityDiagram.png, id=70, 1066.98625pt x 755.82375pt>
+File: LandonExportActivityDiagram.png Graphic file (type png)
+
+<use LandonExportActivityDiagram.png>
+Package pdftex.def Info: LandonExportActivityDiagram.png used on input line 192
+.
+(pdftex.def)             Requested size: 426.78694pt x 302.32414pt.
+ [14 <./bread_deployment_diagram.png>]
+[15 <./LandonExportActivityDiagram.png>] [16] [17] (./Architecture.aux) ) 
 Here is how much of TeX's memory you used:
- 2597 strings out of 492995
- 41653 string characters out of 6132704
+ 2632 strings out of 492995
+ 42651 string characters out of 6132704
  105198 words of memory out of 5000000
- 6144 multiletter control sequences out of 15000+600000
+ 6172 multiletter control sequences out of 15000+600000
  10422 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,8n,39p,891b,260s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
-x10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx
-12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
-.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.p
-fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pf
-b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
->
-Output written on Architecture.pdf (9 pages, 244172 bytes).
+</usr/
+local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/lo
+cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
+texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Architecture.pdf (17 pages, 514320 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 106 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
