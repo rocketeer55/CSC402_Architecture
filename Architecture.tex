@@ -149,9 +149,9 @@ TBD
 \captionof{figure}{Overview of Classes - Matt Yarmolich}
 \endgroup
 
-\paragraph{} Figure 5 depicts a state diagram modeling the user flow when uploading files to be classified. Users will enter this page from the main menu, and leaving this page will take users to the start of the classification process. When leaving this state, all files that were in the process of being uploaded must be completed or canceled.
-\paragraph{} Since users may select more files to upload while some files are already in the process of uploading, a fork is used in this diagram. This means that while files are uploading, a user may select more files to upload, then begin uploading those files. Selecting "continue" will not continue to the next page unless all files have completely uploaded or have been canceled.
-\paragraph{} The processing files state may fail for numerous reasons, such as an incompatible file type, or a corrupt file. When this occurs, that file is deleted from the system, and users may select another file to upload, or cancel.
+\paragraph{}Figure 5 gives an overview of the classes that will make up the designed system. The main parts of this diagram pertain to the front end, back end, and the machine learning aspect of the project. This diagram will be used to model our architecture of our project and to determine how all the pieces of the system fit together. 
+ \paragraph{} All of these components will be designed to be reusable so that they can be strung together and be reused depending on the users use-case. Unfortunately, the languages we have picked do not lend themselves particularly well for object oriented programming (python is a scripted language and react is based on javascript) so we ultimately decided to split these into files.
+  \paragraph{} Both S3 and the database are responsible for interacting with the users information. The Database is mainly used for user credentials and permissions so that only certain users can access data from the S3 Bucket. The S3 bucket is used to store user given CSVs, along with the data classification result which is an output from the machine learner. Both of these services interface with the python backend in order to obtainer their data and display it to the front end through React.
 
 \subsubsection{Flow of Data}
 \includegraphics[scale = 0.52]{YarmSequenceDiagram.png}
@@ -159,8 +159,11 @@ TBD
 \captionof{figure}{Sequence Diagram of Data - Matt Yarmolich}
 \endgroup
 
-\paragraph{}Figure 6 gives an overview of the classes that will make up the designed system. The main parts of this diagram pertain to the front end, back end, and the machine learning aspect of the project. This diagram will be used to model our architecture of our project and to determine how all the pieces of the system fit together. 
- \paragraph{} All of these components will be designed to be reusable so that they can be strung together and be reused depending on the users use-case. Unfortunately, the languages we have picked do not lend themselves particularly well for object oriented programming (python is a scripted language and react is based on javascript) so we ultimately decided to split these into files.
+
+ 
+ \paragraph{} Figure 6 depicts a sequence diagram modeling the user flow when uploading files to be classified. Users will enter this page from the main menu, and leaving this page will take users to the start of the classification process. When leaving this state, all files that were in the process of being uploaded must be completed or canceled.
+\paragraph{} Since users may select more files to upload while some files are already in the process of uploading, a fork is used in this diagram. This means that while files are uploading, a user may select more files to upload, then begin uploading those files. Selecting "continue" will not continue to the next page unless all files have completely uploaded or have been canceled.
+\paragraph{} The processing files state may fail for numerous reasons, such as an incompatible file type, or a corrupt file. When this occurs, that file is deleted from the system, and users may select another file to upload, or cancel.
  
  \subsubsection{Flow of Data}
 \includegraphics[scale = 0.40]{LandonStateDiagram.png}
