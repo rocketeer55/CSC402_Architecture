@@ -11,7 +11,7 @@
 
 \title{\bfseries Data Classifier: \\
 Software Architecture\\
-Version 1.0}
+Version 2.0}
 
 \author {
 \large{Team Mark}\\
@@ -20,7 +20,7 @@ Version 1.0}
 \emph{San Luis Obispo, CA USA}\\
 }
 
-\date{November 7, 2018}
+\date{December 5, 2018}
 \maketitle \thispagestyle{empty}
 
 \pagebreak
@@ -37,7 +37,7 @@ Version 1.0}
 \hline
 Matt Yamolich &November 7, 2018&Contributing Member&1.0\\
 \hline
-Spencer Schurk&November 7, 2018&Lead Author of Introduction, Upload Data Testing&1.0\\
+Spencer Schurk&December 5, 2018&Lead Author of Introduction, Testing&2.0\\
 \hline
 Geraldo Macias&November 7, 2018&Lead Author of Overview and Co-Author of Component&1.0\\
 \hline
@@ -56,7 +56,7 @@ Spencer Schurk&November 7, 2018&Completed Introduction, Upload Data Testing, and
 \hline
 Jake Veazey&November 7, 2018&Updated the project problem&1.0\\
 \hline
-&&&\\
+Spencer Schurk&December 5, 2018&Revised Testing&2.0\\
 \hline
 &&&\\
 \hline
@@ -202,16 +202,24 @@ TBD
 \paragraph{}In the case where the system cannot classify a subset of the data, the user has the option to omit this data from the export, meaning that there will be some amount of data found in the input data set that will NOT be in the exported (classified) data set. If the user chooses to NOT omit this unclassified data, then then the system will return to the original data import screen.
 
 \section{Test}
-Since our solution includes multiple components written in different languages, testing should almost exclusively be written separately for each individual component, with system-wide acceptance testing completed at the end. Described below are testing methods for each component.
+Our solution will mostly be written in python, so our test suite will be written in python. Each different docker container will have its own suite of tests, all of which are run when continuous integration builds our project.
 
 \subsection{Login \& Signup}
-In order to test the UI for the login, an automated testing tool can be used, but manual testing will be just as effective and easier to implement as no additional code will be required for testing. The back end will be tested by providing the login API correct and incorrect information to be queried from the database. The results of an approved and logged in acoount or an error will tell us whether testing was successful.
+In order to test the UI for the login, an automated testing tool can be used, but manual testing will be just as effective and easier to implement as no additional code will be required for testing. The back end will be tested by providing the login API correct and incorrect information to be queried from the database. The results of an approved and logged in account or an error will tell us whether testing was successful.
 Signing up for an account will be similar. The tester will provide a login and a password that will be passed to an API. The API will notify the admin of a request. Testing will be looking for the correct information passed in.
 
 \subsection{Data Upload}
 \paragraph{} Testing should be performed with all supported data types. Testing should also be performed with unsupported data types to ensure errors are being caught gracefully. Corrupted or improperly-formatted files should be tested as well, since these will also produce errors. This component should also be tested with bulk-uploading, as users may want to upload a large amount of data files at a time.
 \paragraph{} Once files have successfully been uploaded, their processed output should be tested for consistency with the source file. Ensure that no values are missing, and the data follows the same structure as the source file.
 \paragraph{} Additionally, all other functionality of the Upload Files screen should be functionally tested. Ensure that all buttons work in all states, and users do not get trapped in any states due to unhandled exceptions.
+
+\subsection{Testing Tools}
+\paragraph{} As we develop this project, we are trying to follow test-driven development. For example, before we even write a method, or Flask route, we will write acceptance tests first and ensure they fail. Then we write the code until it passes. By developing this way, we know exactly what standards we need to code too, and know when our code isn't meeting expectations. The only hard part is knowing exactly what tests to run, and what edge cases are present.
+\paragraph{} Since we are using Flask to manage http routes, we are using Flask's testing suite to test. We can simulate http requests (GET, POST, etc), and ensure the response we get back from the backend is correct.
+\paragraph{} These tests are run when Travis-CI builds our project. Right now, all tests are run, but in the future as more tests are written, we may only run a subset of tests (unless told to run the full set of tests). Tests can also be run locally with a script. We currently do not have any plans on using UI testing, since our UI will be fairly limited.
+
+\subsection{Testing Process}
+As developers write their code, they'll first write acceptance tests. Developers will then write code to pass these tests, running the test suite along the way to know when they pass the tests. After all tests succeed locally, developers will commit their code, then create a pull request, pulling their local code into the develop branch. Travis-CI will then run, validating that the pull request didn't break anything and all the tests continue to pass. Another developer will then peer-review the pull request, making sure that all code written follows guidelines and good stylistic patterns. Then, that developer may merge the pull-request into develop. Once a feature has been completed (or sprint has been completed), develop will be merged into the master branch.
 
 \section{Issues}
 [Any issues or open questions should be described here.]
